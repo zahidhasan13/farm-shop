@@ -1,0 +1,319 @@
+@import url(utilities.css);
+header{
+    background: var(--secondary);
+    padding: 25px 0;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 5;
+}
+.nav_link ul li{
+    display: inline-block;
+    margin-right: 30px;
+}
+.nav_link ul li a{
+    display: block;
+    color: var(--primary);
+    font-family: "Halyard-Medium";
+    font-size: 1.1rem;
+    text-transform: capitalize;
+    padding-bottom: 5px;
+
+    position: relative;
+}
+.nav_link ul li a.active:after{
+    content: '';
+    background: var(--primary);
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all 0.3s ease-in-out;
+}
+.nav_link ul li a:after{
+    content: '';
+    background: var(--primary);
+    width: 0%;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: all 0.3s ease-in-out;
+}
+.nav_link ul li a:hover:after{
+    width: 100%;
+}
+.nav_icons span .search_icon{
+    font-size: 1.5rem;
+    margin-right: 1.5rem;
+    color: var(--primary);
+}
+.nav_icons a span i{
+    font-size: 1.5rem;
+    color: var(--primary);
+}
+/* Hero */
+section.hero{
+    background: url(../images/hero-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    margin-top: 0px;
+    padding: 200px 0;
+
+    position: relative;
+}
+section.hero img{
+    width: 130px;
+    position: absolute;
+    left: 58%;
+    top: 10%;
+}
+section.hero h1{
+    font-family: "Halyard-Regular";
+    font-size: 7rem;
+    color: var(--heaven);
+}
+/* Services */
+section.services{
+    padding: 30px 0;
+}
+section.services .service-item .best_price{
+    position: relative;
+    padding: 20px 0;
+    padding-right: 50px;
+}
+section.services .service-item .special_discount,section.services .service-item .buyer_protection{
+    position: relative;
+    padding: 20px 0;
+    padding-left:  30px;
+    padding-right: 50px;
+}
+section.services .service-item .live_support{
+    padding-left:  30px;
+}
+section.services .service-item .best_price:after,
+section.services .service-item .special_discount:after,
+section.services .service-item .buyer_protection:after
+{
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 1px;
+    height: 100%;
+    background: rgba(128, 128, 128, 0.6);
+    opacity: 0.5;
+}
+section.services .service-item .service_name img{
+    margin-right: 20px;
+}
+section.services .service-item .service_name .title h3{
+    font-size: 1.2rem;
+    font-family: "Halyard-Regular";
+    font-weight: 600;
+    color: var(--dark);
+    margin-bottom: 10px;
+}
+section.services .service-item .service_name .title h6{
+    font-size: 1rem;
+    font-family: "DM-Sans-Regular";
+    font-weight: 400;
+    color: var(--gray);
+}
+/* Feature products */
+section.feature_products{
+    background: var(--secondary);
+
+    position: relative;
+    overflow: hidden;
+}
+section.feature_products .section_heading{
+    text-align: center;
+    margin-bottom: 30px;
+}
+section.feature_products .section_heading h5{
+    font-size: 0.9rem;
+    font-family: "Halyard-Regular";
+    letter-spacing: 2px;
+    color: var(--turnary);
+}
+section.feature_products .section_heading h1{
+    font-size: 3.5rem;
+    font-family: "Halyard-Regular";
+    letter-spacing: 2px;
+    color: var(--primary);
+}
+section.feature_products .products_wrapper{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1.5rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+section.feature_products .products_wrapper .products_card{
+    margin-bottom: 2rem;
+    z-index: 2;
+}
+section.feature_products .products_wrapper .products_card .product_image{
+    width: 270px;
+    overflow: hidden;
+}
+section.feature_products .products_wrapper .products_card .product_image img{
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+}
+section.feature_products .products_wrapper .products_card .product_image img:hover{
+    scale: 1.1;
+}
+section.feature_products .products_wrapper .products_card .product_content p{
+    font-size: 1rem;
+    font-family: "DM-Sans-Regular";
+    color: var(--category);
+    margin-top: 10px;
+}
+section.feature_products .products_wrapper .products_card .product_content a{
+    display: block;
+    font-size: 1.2rem;
+    font-family: "Halyard-Medium";
+    color: var(--primary);
+    margin: 10px 0;
+}
+section.feature_products .products_wrapper .products_card .product_content a:hover{
+    color: var(--turnary);
+}
+section.feature_products .products_wrapper .products_card .product_content h5{
+    font-size: 1.1rem;
+    font-family: "DM-Sans-Regular";
+    font-weight: 600;
+    color: var(--category);
+}
+section.feature_products .feature_bg_1{
+    position: absolute;
+    top: 100px;
+    left: -120px;
+}
+section.feature_products .feature_bg_2{
+    position: absolute;
+    top: 40%;
+    right: -200px;
+}
+section.feature_products .feature_bg_3{
+    position: absolute;
+    bottom: 200px;
+    left: 0px;
+    z-index: 1;
+}
+/* Category */
+section.category{
+    padding: 0;
+
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+section.category .category-image-1{
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.4)),
+    url(../images/category-1.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 410px;
+    padding: 2rem;
+}
+section.category .category-image-2{
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.4)),
+    url(../images/category-2.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 410px;
+    padding: 2rem;
+}
+section.category .category-image-3{
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.4)),
+    url(../images/category-3.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 410px;
+    padding: 2rem;
+}
+section.category .category-image-4{
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.4)),
+    url(../images/category-4.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 410px;
+    padding: 2rem;
+}
+section.category .category_content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+section.category .category_content h2{
+    font-family: "Halyard-Regular";
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+    color: var(--heaven);
+}
+section.category .category_content a{
+    color: var(--heaven);
+}
+/* Review */
+section.review{
+    background: var(--secondary);
+    position: relative;
+    overflow: hidden;
+}
+section.review .review_content{
+    text-align: center;
+    padding: 2rem 4rem;
+}
+section.review .review_content .qoute i{
+    transform: rotateX(180deg);
+    font-size: 2rem;
+    color: var(--turnary);
+}
+section.review .review_content p{
+    font-family: "Halyard-Regular";
+    font-size: 1.4rem;
+    padding: 0 9rem;
+    margin: 3rem 0;
+    color: var(--primary);
+}
+section.review .review_content .client_info h2{
+    font-family: "Halyard-Regular";
+    font-size: 1.2rem;
+    color: var(--primary);
+}
+section.review .review_content .client_info h5{
+    font-family: "Halyard-Regular";
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgba(97, 93, 88, 0.671);
+}
+section.review .review_content .client_img{
+    margin-top: 3rem;
+}
+section.review .review_content .client_img img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+section.review .review_bg_1{
+    position: absolute;
+    top: 10%;
+    left: -100px;
+}
+section.review .review_bg_2{
+    position: absolute;
+    bottom: 10%;
+    right: -100px;
+}

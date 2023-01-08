@@ -1,0 +1,155 @@
+/* variable */
+:root {
+    --primary:#152605;
+    --secondary:#F5FAF0;
+    --drop-down: #0D1304;
+    --turnary:#50a236;
+    --hover-color: #296217;
+    --dark: #0a1108;
+    --gray:#615d58;
+    --category: #686a66;
+    --heaven:#FFFFFF;
+}
+/* fonts */
+@font-face{
+    font-family: "DM-Sans-Regular";
+    src: url(../fonts/DMSans-Regular.ttf);
+}
+@font-face{
+    font-family: "Halyard-Regular";
+    src: url(../fonts/Halyard-Display-Regular.ttf);
+}
+@font-face{
+    font-family: "Halyard-Medium";
+    src: url(../fonts/Halyard-Display-Medium.ttf);
+}
+@font-face{
+    font-family: "Halyard-SemiBold";
+    src: url(../fonts/Halyard-Display-SemiBold.ttf)
+}
+@font-face{
+    font-family: "Halyard-Bold";
+    src: url(../fonts/Halyard-Display-Bold.ttf);
+}
+@font-face{
+    font-family: "Halyard-ExtraBold";
+    src: url(../fonts/Halyard-Display-Book.ttf);
+}
+@font-face{
+    font-family: "Halyard-Black";
+    src: url(../fonts/Halyard-Display-Black.ttf);
+}
+/* ========= Reset ============*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+  }
+  body {
+    -webkit-font-smoothing:antialiased;
+    font-family: "Halyard-Regular", sans-serif;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  a {
+    text-decoration: none;
+  }
+  p {
+    font-family: "Halyard-Medium", sans-serif;
+  }
+  ul {
+    list-style-type: none;
+  }
+  .container {
+    width:100%;
+    padding:o 15px;
+    margin:0 auto;
+}
+
+@media (min-width:576px){
+    .container{
+        max-width:540px;
+    }
+}
+@media (min-width: 768px) {
+    .container {
+      max-width: 720px;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .container {
+      max-width: 960px;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .container {
+      max-width: 1152px;
+    }
+  }
+  @media (min-width: 1300px) {
+    .container {
+      max-width: 1230px;
+    }
+  }
+/* Common Css */
+section{
+  padding: 4rem 0;
+}
+.flex{
+    display: flex;
+}
+.flex-1{
+    flex: 1;
+}
+.justify-center{
+    justify-content: center;
+}
+.justify-between{
+    justify-content: space-between;
+}
+.align-center{
+    align-items: center;
+}
+.text-center{
+    text-align: center;
+}
+.text-primary{
+    color: var(--primary);
+}
+.text-white{
+    color: var(--heaven);
+}
+.text-danger{
+  color: var(--danger);
+}
+.btn{
+    padding: 0.75rem 1.5rem;
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 0.9rem;
+    font-family: "Halyard-Medium";
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.btn-primary{
+    background: var(--turnary);
+    color: var(--heaven);
+}
+.btn-primary:hover{
+    background: var(--hover-color);
+}
+.btn-secondary{
+    background: var(--secondary);
+    color: var(--pure);
+}
+.btn-secondary:hover{
+    background: var(--pure);
+    color: var(--secondary);
+    border: 2px solid var(--secondary);
+}
